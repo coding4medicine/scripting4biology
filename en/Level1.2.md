@@ -1,48 +1,145 @@
-# Loops
+# String processing
 
 
 ## PERL
 
-Multiplication table -
+In PERL, a string is described as a variable.
 
 ~~~~~~~~
 #!/usr/bin/perl
+$x="My name is Alice";
+print $x,"\n";
+~~~~~~~~
 
-$i=1;
-while($i<=10) {
-     print 9*$i, "\n";
-      $i++;
+Joining two strings
+
+You can join two strings by using '.'.
+
+~~~~~~~~
+#!/usr/bin/perl
+$x="My name";
+$y="is Alice";
+$z=$x.$y;
+print $z,"\n";
+~~~~~~~~
+
+### Splitting a string
+
+You can use 'substr' to extract part of a string. The first parameter in substr command is a string, second parameter is starting position (begins with 0) and third parameter is number of letters to be extracted. The following command should extract 'Seattle' from the sentence.
+
+~~~~~~~~
+#!/usr/bin/perl
+$s="I am flying from Seattle to San Francisco";
+$t=substr($s,17,7);
+print "$t\n";
+~~~~~~~~
+
+
+### Searching within a string
+
+You can use grep-like regular expression to search within a string. We are looking for letters S or F in the original string. All other grep-like regular expression commands can be used in this kind of searches.
+
+~~~~~~~~
+#!/usr/bin/perl
+$s="I am flying from Seattle to San Francisco";
+if($s=~/[SF]/)
+{
+   print "The line has S or F\n";
+}
+else
+{
+  print "No S or F found\n";
 }
 ~~~~~~~~
 
-## python
+### Search and replace
 
-Multiplication table  -
+You can also use regular expression to replace words. The following command replaces all occurrences of Seattle with London.
+
+~~~~~~~~
+#!/usr/bin/perl
+$s="I am flying from Seattle to San Francisco";
+$s=~ s/Seattle/London/g;
+print "$s\n";
+~~~~~~~~
+
+
+## Python
+
+### Simple string
+
+In python, a string is described in terms of an array (list). In the following example, x is an array. x[0]='I'. x[1]=' '. x[2]='a'.
 
 ~~~~~~~~
 #!/usr/bin/env python
-
-i=1
-while(i<=10):
-     print 9*i
-     i=i+1
+x='My name is Alice'
+print x
 ~~~~~~~~
+
+### Joining two strings
+
+You can join two strings by using +.
+
+~~~~~~~~
+#!/usr/bin/env python
+x='My name'
+y=' is Alice'
+print x+y
+~~~~~~~~
+
+
+## Splitting a string
+
+You can also split a string by extracting part of the array.
+~~~~~~~~
+#!/usr/bin/env python
+x='I am flying from Seattle to San Francisco'
+print x[17:25]
+~~~~~~~~
+
+
+### Searching within a string
+
+Here is an example of using regular expression in python. All grep-like regular expressions can be used in this example.
+
+~~~~~~~~
+#!/usr/bin/env python
+import re
+str = 'I am flying from Seatttle to San Francisco'
+match = re.search(r'[SF]', str)
+if match:
+   print 'found S/F', match.group() 
+else:
+    print 'did not find S/F'
+~~~~~~~~   
+
+### Search and replace
+
+The sub command replaces "Seattle" with "London" in the following example.
+~~~~~~~~
+#!/usr/bin/env python
+import re
+str = 'I am flying from Seattle to San Francisco'
+x = re.sub(r'Seattle', 'London', str)
+print x
+~~~~~~~~
+
+For detailed description of all regular expression rules, check here -
+
+https://developers.google.com/edu/python/regular-expressions?hl=en
 
 
 ## GO
 
-Multiplication table  -
+In GO, a string is described in terms of an array (list). In the following example, x is an array. x[0]='I'. x[1]=' '. x[2]='a'. Remaining commands are similar to python.
 
 ~~~~~~~~
 package main
 import "fmt"
-
 func main() {
-    var i int
-    i=1
-   for i<=10 {
-        fmt.Println(9*i)
-        i=i+1
-   }
+var x string
+x= "I am flying from Seattle to San Francisco"
+fmt.Println(x)
+fmt.Println(x[2:7])
 }
 ~~~~~~~~

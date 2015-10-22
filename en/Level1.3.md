@@ -1,35 +1,37 @@
-# Conditions
+# Loops
 
 
 ## PERL
 
+Multiplication table -
+
 ~~~~~~~~
 #!/usr/bin/perl
 
-$i=7;
-if($i<10) {
-     print $i, "is less than 10\n";
-}
-else {
-     print $i, "is greater than 10\n";
+$i=1;
+while($i<=10) {
+     print 9*$i, "\n";
+      $i++;
 }
 ~~~~~~~~
 
 ## python
 
+Multiplication table  -
+
 ~~~~~~~~
 #!/usr/bin/env python
 
-i=7;
-if(i<10):
-     print i, "is less than 10\n"
-else:
-     print i, "is greater than 10\n"
-
+i=1
+while(i<=10):
+     print 9*i
+     i=i+1
 ~~~~~~~~
 
 
 ## GO
+
+Multiplication table  -
 
 ~~~~~~~~
 package main
@@ -37,12 +39,10 @@ import "fmt"
 
 func main() {
     var i int
-    i=7
-    if i<10 {
-        fmt.Println(i)
-    } else {
-        fmt.Println(i)
+    i=1
+   for i<=10 {
+        fmt.Println(9*i)
+        i=i+1
    }
 }
 ~~~~~~~~
-
