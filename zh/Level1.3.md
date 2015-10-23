@@ -1,35 +1,26 @@
-# Conditions
+# For loops
 
-
-## PERL
-
-~~~~~~~~
-#!/usr/bin/perl
-
-$i=7;
-if($i<10) {
-     print $i, "is less than 10\n";
-}
-else {
-     print $i, "is greater than 10\n";
-}
-~~~~~~~~
 
 ## python
+
+Multiplication table  -
 
 ~~~~~~~~
 #!/usr/bin/env python
 
-i=7;
-if(i<10):
-     print i, "is less than 10\n"
-else:
-     print i, "is greater than 10\n"
+#
+# The keyword 'for' is used to loop over the same code many times.
+# It uses two other keywords 'in' and 'range'. 
+#
+for i in range(1,10):
+    print i,7*i
 
 ~~~~~~~~
 
 
 ## GO
+
+Multiplication table  -
 
 ~~~~~~~~
 package main
@@ -37,12 +28,27 @@ import "fmt"
 
 func main() {
     var i int
-    i=7
-    if i<10 {
-        fmt.Println(i)
-    } else {
-        fmt.Println(i)
+    i=1
+   for i<=10 {
+        fmt.Println(7*i)
+        i=i+1
    }
 }
 ~~~~~~~~
+
+
+
+## PERL
+
+Multiplication table -
+
+~~~~~~~~
+#!/usr/bin/perl
+
+for($i=0; $i<10; $i++) {
+     print 9*$i, "\n";
+}
+
+~~~~~~~~
+
 

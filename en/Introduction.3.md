@@ -57,11 +57,11 @@ b) How to do simple calculations (numbers and variables) - Module1
 
 c) How to do repetitive calculations (loops and conditions) - Module1
 
-d) How to read from and write into files -Module2
+d) How to read from and write into files -Module4
 
-e) How to use arrays or lists - Module3
+e) How to use arrays or lists - Module1
 
-f) How to process strings and associative arrays - Module2, Module3
+f) How to process strings and associative arrays - Module1, Module1
 
 g) How to reuse code (functions, modules, packages, libraries, etc.) - Module7, Module8
 

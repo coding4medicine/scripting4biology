@@ -1,2 +1,2 @@
-# Module 2 - Coding practices
+# Level 2 - Algorithms and coding practices
 

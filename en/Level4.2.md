@@ -1,15 +1,5 @@
 # Writing into a file  -
 
-## PERL
-
-~~~~~~~~
-#!/usr/bin/perl
-
-open(OUT,">myfile");
-print OUT "My name is john\n";
-close(OUT);
-~~~~~~~~
-
 ## python
 
 ~~~~~~~~
@@ -33,3 +23,14 @@ if(err!=nil) {}
 file.WriteString("hi, my name is john\n")
 }
 ~~~~~~~~
+
+## PERL
+
+~~~~~~~~
+#!/usr/bin/perl
+
+open(OUT,">myfile");
+print OUT "My name is john\n";
+close(OUT);
+~~~~~~~~
+

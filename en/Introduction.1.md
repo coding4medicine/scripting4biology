@@ -34,8 +34,6 @@ Here is the simple picture of hardware. At first, raw reads sit in the hard-driv
 
 
 
-
-
 Think about a car. You can have a driver's view.
 or you can see it from inside the engine.
 

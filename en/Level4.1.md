@@ -1,20 +1,5 @@
 # Reading from a file
 
-
-## PERL
-
-~~~~~~~~
-#!/usr/bin/perl
-open(IN,"filename");
-$_=<IN>;
-while(<IN>)
-{
-	print $_;
-}
-close(IN);
-~~~~~~~~
-
-
 ## python
 
 ~~~~~~~~
@@ -43,3 +28,17 @@ func main() {
     fmt.Println(scanner.Text())
 }
 ~~~~~~~~
+
+## PERL
+
+~~~~~~~~
+#!/usr/bin/perl
+open(IN,"filename");
+$_=<IN>;
+while(<IN>)
+{
+        print $_;
+}
+close(IN);
+~~~~~~~~
+

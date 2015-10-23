@@ -8,21 +8,6 @@ B. explain the concept of a variable
 
 
 
-## PERL
-
-
-~~~~~~~~
-#!/usr/bin/perl
-
-$x=10;
-$y=2*$x;
-print "$y\n";
-$y=$y+1;
-print "$y\n";
-~~~~~~~~
-
-
-
 ## Python
 
 ~~~~~~~~
@@ -53,3 +38,19 @@ func main() {
     fmt.Println(y)
 }
 ~~~~~~~~
+
+
+## PERL
+
+
+~~~~~~~~
+#!/usr/bin/perl
+
+$x=10;
+$y=2*$x;
+print "$y\n";
+$y=$y+1;
+print "$y\n";
+~~~~~~~~
+
+
